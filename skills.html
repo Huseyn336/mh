@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bacarıqlar - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  
+  <!-- Mobil üçün -->
+  <link rel="stylesheet" href="style-mobile.css" media="(max-width: 767px)" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #3b0066, #1a0033);
+  color: #e0dff2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+/* Navbar */
+.navbar {
+  background-color: #3b0066;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #aa88ff;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #aa88ff;
+  transform: scale(1.1);
+}
+
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Main Section */
+main {
+  flex-grow: 1;
+  padding: 3rem 0;
+}
+
+.skills-section h2 {
+  font-size: 2.8rem;
+  color: #dcd6f7;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1.3px;
+  text-shadow: 1px 1px 3px #7e5ce6;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.skills-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e0dff2;
+  box-shadow: 0 5px 15px rgba(26, 0, 51, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.skills-list li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(126, 92, 230, 0.5);
+  background: rgba(126, 92, 230, 0.15);
+}
+
+.skill-icon {
+  font-size: 2.2rem;
+  color: #cfc9f8;
+  filter: drop-shadow(0 0 3px #7e5ce6);
+}
+
+/* Footer */
+footer {
+  background: #1a0033;
+  padding: 1.4rem 0;
+  text-align: center;
+  color: #dcd6f7;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  box-shadow: 0 -2px 10px rgba(26, 0, 51, 0.9);
+  user-select: none;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+
+  
+</style>
+
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">MH Portfolio</div>
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Səhifə</a></li>
+        <li><a href="about.html">Haqqımda</a></li>
+        <li><a href="skills.html">Bacarıqlar</a></li>
+        <li><a href="projects.html">Proyektlər</a></li>
+        <li><a href="contact.html">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="skills-section container">
+      <h2>Bacarıqlarım</h2>
+      <ul class="skills-list">
+        <li><i class="fab fa-html5 skill-icon"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt skill-icon"></i> CSS3</li>
+        <li><i class="fab fa-js skill-icon"></i> JavaScript</li>
+        <li><i class="fab fa-react skill-icon"></i> React</li>
+        <li><i class="fab fa-git-alt skill-icon"></i> Git & GitHub</li>
+      </ul>
+    </section>
+  </main>
+
+ <footer class="footer">
+  <div class="footer-content container">
+    <p>&copy; <span id="year"></span> Məmmədov Hüseyn. Bütün hüquqlar qorunur.</p>
+    <div class="contact-socials">
+     <a href="https://github.com/Huseyn336"><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/hus3ynm?igsh=MTJya3I1ano0eDcxYg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+         <a href="mailto:huseynm001@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+994553361272"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

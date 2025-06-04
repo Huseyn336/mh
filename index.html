@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Məmmədov Hüseyn - Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Desktop üçün -->
+  <link rel="stylesheet" href="style.css" media="(min-width: 768px)" />
+  <!-- Mobil üçün -->
+  <link rel="stylesheet" href="style-mobile.css" media="(max-width: 767px)" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">MH Portfolio</div>
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Səhifə</a></li>
+        <li><a href="about.html">Haqqımda</a></li>
+        <li><a href="skills.html">Bacarıqlar</a></li>
+        <li><a href="projects.html">Proyektlər</a></li>
+        <li><a href="contact.html">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h1>Salam, mən <span>Məmmədov Hüseyn</span></h1>
+      <h2>Full Stack Developer</h2>
+      <p>"Təmiz və səmərəli kodlarla yüksək səviyyəli rəqəmsal təcrübələr yaradıram. Fərq yaradan həllər yaratmağa həvəslə yanaşıram."</p>
+      <div class="buttons">
+        <a href="contact.html" class="btn primary">Əlaqə Saxla</a>
+        <a href="projects.html" class="btn outline">Proyektlərə Bax</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/Huseyn336"><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/hus3ynm?igsh=MTJya3I1ano0eDcxYg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+         <a href="mailto:huseynm001@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+994553361272"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="avatar-wrapper">
+        <div class="avatar-circle">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="settings-icon">
+          <i class="fas fa-cog"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="about-section">
+      <div class="about-info">
+        <div class="about-image"></div>
+        <div class="about-text">
+          <h2>Haqqımda</h2>
+          <div class="divider"></div>
+          <p>Proqram təminatı sahəsində 3 ildən çox təcrübəyə malikəm və elektron ticarət platformalarından tutmuş korporativ tətbiqlərə qədər müxtəlif layihələrdə çalışmışam.</p>
+          <p>Məqsədim real problemləri həll edən təmiz, səmərəli və genişlənə bilən həllər yaratmaqdır.</p>
+          <p>Yeni texnologiyalarla daim maraqlanıram və biliklərimi artırmağa çalışıram. Kod yazmadığım vaxtlarda açıq mənbə layihələrə töhfə verirəm, junior proqramçılara mentorluq edir və təbiətdə vaxt keçirirəm.</p>
+          <p><strong>Təhsil</strong><br>Kompüter Elmləri üzrə bakalavr<br>Riga Technical University</p>
+          <p><strong>Təcrübə</strong><br>3+ il<br>Full Stack Tərtibatçılıq</p>
+          <p><strong>Yer</strong><br>Bakı, Azərbaycan<br>Uzaqdan iş üçün açığam</p>
+          <p><strong>Dillər</strong><br>İngilis (Ana dil səviyyəsində)<br>İngilis (Ana dil səviyyəsində</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>Bacarıqlarım</span></h2>
+      <div class="skills">
+        <div class="skills-box">
+          <h3><i class="fas fa-code"></i> Texniki Bacarıqlar</h3>
+          <div class="skill-bar">
+            <p>JavaScript/TypeScript</p>
+            <div class="bar"><span style="width: 95%;"></span></div>
+          </div>
+          <div class="skill-bar">
+            <p>React/Next.js</p>
+            <div class="bar"><span style="width: 90%;"></span></div>
+          </div>
+          <div class="skill-bar">
+            <p>Node.js/Express</p>
+            <div class="bar"><span style="width: 85%;"></span></div>
+          </div>
+          <div class="skill-bar">
+            <p>HTML/CSS/Tailwind</p>
+            <div class="bar"><span style="width: 95%;"></span></div>
+          </div>
+          <div class="skill-bar">
+            <p>Python/Django</p>
+            <div class="bar"><span style="width: 80%;"></span></div>
+          </div>
+        </div>
+        <div class="skills-box">
+          <h3><i class="fas fa-briefcase"></i> Peşəkar Bacarıqlar</h3>
+          <div class="circle-skills">
+            <div class="circle-skill"><svg>
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#e6e6e6" stroke-width="6" />
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#6c63ff" stroke-width="6" stroke-dasharray="219.9" stroke-dashoffset="21.99" />
+              </svg>
+              <p>Problem Həlli<br>90%</p>
+            </div>
+            <div class="circle-skill"><svg>
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#e6e6e6" stroke-width="6" />
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#6c63ff" stroke-width="6" stroke-dasharray="219.9" stroke-dashoffset="32.99" />
+              </svg>
+              <p>Komanda işi<br>85%</p>
+            </div>
+            <div class="circle-skill"><svg>
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#e6e6e6" stroke-width="6" />
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#6c63ff" stroke-width="6" stroke-dasharray="219.9" stroke-dashoffset="10.99" />
+              </svg>
+              <p>Ünsiyyət<br>95%</p>
+            </div>
+            <div class="circle-skill"><svg>
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#e6e6e6" stroke-width="6" />
+                <circle r="35" cx="40" cy="40" fill="none" stroke="#6c63ff" stroke-width="6" stroke-dasharray="219.9" stroke-dashoffset="43.99" />
+              </svg>
+              <p>Lahiyə İdarəetməsi<br>80%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>Proyektlərim</span></h2>
+      <div class="projects">
+        <div class="project-card">
+          <div class="project-header blue">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-body">
+            <h3>Elektron Ticarət Platforması</h3>
+            <p>Məhsul idarəsi, səbət və ödəniş funksiyaları olan tam funksiyalı onlayn mağaza.</p>
+            <div class="tech-stack"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span></div>
+            <div class="project-footer">
+              <a href="#">Demo</a>
+              <a href="#">Mənbə Kodu</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header violet">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-body">
+            <h3>Tapşırıq İdarəetmə Tətbiqi</h3>
+            <p>Real vaxt yenilənən, istifadəçi rolları və izləmə imkanları ilə əməkdaşlıq əsaslı tapşırıq idarəetməsi.</p>
+            <div class="tech-stack"><span>Next.js</span><span>TypeScript</span><span>Firebase</span><span>Tailwind</span></div>
+            <div class="project-footer">
+              <a href="#">Demo</a>
+              <a href="#">Mənbə Kodu</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header purple">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-body">
+            <h3>Analitik Panel</h3>
+            <p>Fərdiləşdirilə bilən vidjetlər və real vaxt metrikaları ilə interaktiv məlumat vizuallaşdırması platforması.</p>
+            <div class="tech-stack"><span>React</span><span>D3.js</span><span>Express</span><span>PostgreSQL</span></div>
+            <div class="project-footer">
+              <a href="#">Demo</a>
+              <a href="#">Mənbə Kodu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section container">
+      <h2 class="section-title"><span>Əlaqə Saxla</span></h2>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="Emailiniz" required>
+            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Mesaj Göndər</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> huseynm001@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +994 55 336 12 72</p>
+          <p><i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<footer class="footer">
+  <div class="footer-content container">
+    <p>&copy; <span id="year"></span> Məmmədov Hüseyn. Bütün hüquqlar qorunur.</p>
+    <div class="contact-socials">
+     <a href="https://github.com/Huseyn336"><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/hus3ynm?igsh=MTJya3I1ano0eDcxYg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+         <a href="mailto:huseynm001@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+994553361272"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</footer>
+</html>

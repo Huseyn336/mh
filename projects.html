@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layihələr - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  
+  <!-- Mobil üçün -->
+  <link rel="stylesheet" href="style-mobile.css" media="(max-width: 767px)" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #4b0082, #8a2be2); /* purple gradient */
+  color: #ede9ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+/* Navbar */
+.navbar {
+  background-color: #3b0066;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #aa88ff;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #aa88ff;
+  transform: scale(1.1);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+  padding: 3rem 0;
+}
+
+.projects-section h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #e6dbff;
+  text-shadow: 1px 1px 6px #9b59b6;
+  letter-spacing: 1.5px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(138, 43, 226, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(75, 0, 130, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e6dbff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(155, 89, 182, 0.6);
+  background: rgba(155, 89, 182, 0.25);
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px #5a1d87;
+}
+
+.project-card p {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+  color: #dcd6f7;
+  text-shadow: 0 1px 3px #4b0082;
+}
+
+.btn {
+  text-align: center;
+  background-color: #7e57c2;
+  color: #ede9ff;
+  padding: 0.6rem 1.6rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(126, 87, 194, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #9b59b6;
+  box-shadow: 0 10px 25px rgba(155, 89, 182, 0.7);
+}
+
+/* Footer */
+footer {
+  background: #4b0082;
+  padding: 1.4rem 0;
+  text-align: center;
+  color: #dcd6f7;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  box-shadow: 0 -3px 12px rgba(138, 43, 226, 0.7);
+  user-select: none;
+  font-size: 0.95rem;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+  }
+}
+</style>
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MH Portfolio</div>
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Səhifə</a></li>
+        <li><a href="about.html">Haqqımda</a></li>
+        <li><a href="skills.html">Bacarıqlar</a></li>
+        <li><a href="projects.html">Proyektlər</a></li>
+        <li><a href="contact.html">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="projects-section container">
+      <h2>Proyektlərim</h2>
+      <div class="project-cards">
+        <article class="project-card">
+          <h3>Restoran POS Sistemi</h3>
+          <p>Masa idarəsi, menyu seçimi, çap və idarəetmə funksiyaları ilə müasir restoran POS sistemi.</p>
+          <a href="#" class="btn">Ətraflı</a>
+        </article>
+        <article class="project-card">
+          <h3>Korporativ Vebsayt</h3>
+          <p>Animasiya və interaktiv dizayn ilə müasir şirkət üçün peşəkar sayt.</p>
+          <a href="#" class="btn">Ətraflı</a>
+        </article>
+        <article class="project-card">
+          <h3>Portfolio Saytı</h3>
+          <p>Öz bacarıqlarımı və layihələrimi əks etdirən futuristik dizaynlı sayt.</p>
+          <a href="#" class="btn">Ətraflı</a>
+        </article>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+  <div class="footer-content container">
+    <p>&copy; <span id="year"></span> Məmmədov Hüseyn. Bütün hüquqlar qorunur.</p>
+    <div class="contact-socials">
+     <a href="https://github.com/Huseyn336"><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/hus3ynm?igsh=MTJya3I1ano0eDcxYg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+         <a href="mailto:huseynm001@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+994553361272"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
